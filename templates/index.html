@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Group 8 project</title>
+    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-deep-purple w3-wide w3-padding w3-card">
+    <a href="{{url_for('index')}}" class="w3-bar-item w3-button"><b>8</b> 2D Project Term 3</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Tasks</a>
+      <a href="#about" class="w3-bar-item w3-button">Our group</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="{{url_for('static',filename='bg.jpg') }}" alt="Picture" width="1500" height="250">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>2D Project</b></span> <span class="w3-hide-small w3-text-light-grey">Nice, right?</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-grey w3-padding-16">Projects</h3>
+  </div>
+<centre>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="{{url_for('Task1')}}">
+        <div class="w3-display-topleft w3-black w3-padding">Task 1</div>
+        <img src="{{url_for('static',filename='covidvax.jpeg') }}" alt="Picture" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="{{url_for('Task2')}}">
+        <div class="w3-display-topleft w3-black w3-padding">Task 2</div>
+        <img src="{{url_for('static',filename='virus.jpg') }}" alt="Picture" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</centre>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-grey w3-padding-16">Our group</h3>
+    <p>
+        You probably haven't seen a better group yet lol
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{{url_for('static',filename='Fauzaan.jpg') }}" alt="Fauzaan" style="width:70%" >
+      <h3>Mohammed Fauzaan</h3>
+      <p class="w3-opacity">The strong</p>
+      <p>I arm-wrestled everyone in my group and beat them</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{{url_for('static',filename='Seetoh.jpg') }}" alt="Seetoh Jian Qing" style="width:88%">
+      <h3>Seetoh Jian Qing</h3>
+      <p class="w3-opacity">The Brain</p>
+      <p>In my pass-time, I am Plato</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{{url_for('static',filename='Kay Wee.jpg') }}" alt="Tan Kay Wee" style="width:70%">
+      <h3>Tan Kay Wee</h3>
+      <p class="w3-opacity">The Brawl</p>
+      <p>I am not scared of COVID</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{{url_for('static',filename='Chunjie.jpg') }}" alt="Zhang Chunjie" style="width:70%">
+      <h3>Zhang Chunjie</h3>
+      <p class="w3-opacity">The observationist</p>
+      <p>Don't listen to Kay Wee</p>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Click <a href="{{url_for('bibliography')}}">here</a> to see our references!</p>
+</footer>
+
+</body>
+</html>
