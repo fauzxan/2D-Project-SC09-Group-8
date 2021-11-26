@@ -3,11 +3,15 @@ from flask.globals import request
 from forms import someform
 from task2_code import predict_num_new_cases as p
 from flask_bootstrap import Bootstrap
+from app.middleware import PrefixMiddleware
+from config import Config
 
 app=Flask(__name__)
 
 # Flask-WTF requires an encryption key - the string can be anything
 app.config['SECRET_KEY'] = '4TcUAnNR6523gReAuPVMLJ0nBJ8d9cDY'
+app.config.from_object(Config)
+app.wsgi_app = PrefixMiddleware(app.wsgi_app, voc=True)
 
 # Flask-Bootstrap requires this line
 Bootstrap(app)
