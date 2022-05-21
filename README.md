@@ -49,7 +49,7 @@ smokers, male smokers, or the number of persons aged above 70) and continuous da
 
 (such as new cases, deaths, etc). Hence, we were able to play with different types of models.
 
-### **Data Preparaton (refer to Annex 1.2 for code)**
+## **Data Preparaton (refer to Annex 1.2 for code)**
 
 We did the following to clean up and improve the large amount of data.
 
